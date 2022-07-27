@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/Logo Ricardo Novais Fundo Claro.png" alt="logo ricardo novais">
+    </header>
+    <div>
+        <h2 class="title">Etch-a-sketch</h2>
+    </div>
+    <div class="main">
+        <div class="control">
+            <input class="hide" id="color-picker" type="color" value="#1E3148"> 
+            <button id="color-button">Selecionar cor</button>                              
+            <button onclick="currentColor('random')" id="random-color">Cor aleatória</button>
+            <button onclick="currentColor('white')" id="eraser">Apagar</button>
+            <button onclick='resetGrid()' id="clear">Limpar tudo</button>
+            <div id="size-value">15 x 15</div>
+            <input type="range" id="size" value="15" min="9" max="99" onchange="changeSize(this.value)">
+         </div>
+        <div class="grid">
+    
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          ricardonovais
+        </p>
+        <a href="https://github.com/Ricardonovais1" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
